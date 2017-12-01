@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Godfession</title>
+    <meta charset="utf-32">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="description" content="A fully featured Multi-purpose UI">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="apetugideon">
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/uploadfile.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="shortcut icon" href="../images/icon.png" type="image/png">
+</head>
+
+<body>
+    <div class="w3-container">
+        <div class="w3-row">
+            <div class="w3-col l12 m12 s12" style="padding:10px;">
+                <img src="../images/icon.png" style="height:80px; width:80px;">
+                <img src="../images/godfessions-logo-copy-2.png" alt="godfessions logo">
+            </div>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-col l2 m2 s12">
+                <ul class="menu_root">
+                    <li onclick="loadHtmlPage('user.html','dwin');getData('user_data_log','getUsers','users_list_log','tuser','user');"><i class="fa fa-user"></i>&nbsp;Users</li>
+                    <li onclick="loadHtmlPage('newrep.html','dwin');getData('user_data_log','getNews','news_list_log','newsview','dnews');"><i class="fa fa-edit"></i>&nbsp;News</li>
+                    <li onclick="loadHtmlPage('newcatrep.html','dwin');getData('user_data_log','getNewsCat','news_cat_log','catlist','newscat');"><i class="fa fa-archive"></i>&nbsp;News Categories</li>
+                    <li onclick="loadHtmlPage('sitesetting.html','dwin');"><i class="fa fa-globe"></i>&nbsp;Site Settings </li>
+                    <li onclick="loadHtmlPage('emailtemprep.html','dwin');getData('user_data_log','getEmails','email_log','emailtmp','emailwin');"><i class="fa fa-envelope"></i>&nbsp;Email Templates</li>
+                    <li onclick="loadHtmlPage('lngReport.html','dwin');"><i class="fa fa-group"></i>&nbsp;Languages</li>
+                    <li onclick="loadHtmlPage('staticReport.html','dwin');"><i class="fa fa-paragraph"></i>&nbsp;Static pages</li>
+                    <li onclick="loadHtmlPage('subscriberReport.html','dwin');"><i class="fa fa-edit"></i>&nbsp;News Letter Subscribers</li>
+                    <li onclick="loadHtmlPage('subscriptionReport.html','dwin');"><i class="fa fa-edit"></i>&nbsp;Subscriptions</li>
+                </ul>
+            </div>
+            <div id="dwin" class="w3-col l10 m10 s12">
+                <h2>Get Started!</h2>
+                Click on the menu items to the left hand side to get started.
+            </div>
+
+        </div>
+        <footer class="w3-containe w3-footer">
+            &copy; 2017 GOD'FESSIONS
+        </footer>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ckeditor.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/jquery.datepick.min.js"></script>
+    <script src="../js/jsrender.min.js"></script>
+    <script src="../js/jquery.uploadfile.min.js"></script>
+    <script src="../js/utility.js"></script>
+    <script src="../js/actions.js"></script>
+</body>
+
+</html>

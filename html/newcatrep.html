@@ -1,0 +1,49 @@
+<div class="w3-row">
+    <div class="w3-col l10 m10 s9">
+        <form method="post">
+            <table>
+                <tr>
+                    <td><input type="text" id="news_cat_search" name="news_cat_search"></td>
+                    <td><button class="w3-button w3-green" type="button" style="padding:3px 10px 3px 10px;"> Search </button></td>
+                </tr>
+                <tr>
+                    <td>Search new category</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="w3-col l2 m2 s3">
+        <a class="w3-button" href="#">+ Add new</a>
+    </div>
+</div>
+<div class="w3-row">
+    <div id="newscat" class="w3-col l12 m12 s12">
+
+    </div><br/> LEGENDS&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-check w3-green"></i>&nbsp;&nbsp;ACTIVE&nbsp;&nbsp;<i class="fa fa-times w3-red"></i>&nbsp;&nbsp;DEACTIVATED&nbsp;&nbsp;<i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;EDIT&nbsp;&nbsp;<i class="fa fa-trash-o"></i>&nbsp;&nbsp;DELETE
+</div>
+<script id="catlist" type="text/x-jsrender">
+    <table class="w3-table-all w3-border" style="width:50%;">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Status</th>
+                <th>category</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{for ~root.newscat ~index = #index}}
+            <tr>
+                <td>{{:id}}</td>
+                <td style="text-align:center;">{{if status == '1'}}<i class="fa fa-check w3-green"></i>{{else}}<i class="fa fa-times w3-red"></i>{{/if}}</td>
+                <td>{{:category}}</td>
+                <td style="text-align:center;">
+                    <i onclick="view_edit_data('{{:id}}','getNewsCat','newscat.html','single_user_log','dwin');" class="fa fa-2x fa-pencil-square-o"></i>&nbsp;
+                    <i onclick="delete_data('{{:id}}','category', 'user_data_log','getNewsCat','news_cat_log','catlist','newscat');" class="fa fa-2x fa-trash-o"></i>
+                </td>
+            </tr>
+            {{/for}}
+        </tbody>
+    </table>
+</script>

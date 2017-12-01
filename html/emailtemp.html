@@ -1,0 +1,29 @@
+<div id="emailedit" style="width:100%; height:500px;"></div>
+<script id="emailtmpl" type="text/x-jsrender">
+    <form method="POST" id="emailtemplate" name="emailtemplate">
+        <table class="w3-table-all">
+            <tr>
+                <td>Template Code:<br/>
+                    <input type="text" id="cat" name="cat" class="w3-input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Name:<br/>
+                    <input type="text" id="name" name="name" class="w3-input" value="{{:emails.name}}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Template:<br/>
+                    <input type="text" id="temp" name="temp" class="w3-input" value="{{:emails.template}}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" id="btnSave2" name="btnSave2" class="w3-button w3-green">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</script>

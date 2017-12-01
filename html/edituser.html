@@ -1,0 +1,53 @@
+<div id="duser" style="width:100%; height:500px;"></div>
+<script id="uform" name="uform" type="text/x-jsrender">
+    <h1>Basic Information</h1>
+    <form method="Post">
+        <table class="w3-table">
+            <tr>
+                <td> <label for="Fn">First Name</label><br>
+                    <input type="text" id="fn" name="fn" placeholder="Enter your name" class="w3-input" value="{{:users.first_name}}"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="ln">Last Name</label><br>
+                    <input type="text" id="ln" name="ln" placeholder="Enter your Last name" class="w3-input" value="{{:users.last_name}}"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="Em">Email</label><br>
+                    <input type="text" id="Em" name="Em" placeholder="Enter your Email" class="w3-input" value="{{:users.email}}"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="Add">Address information</label><br>
+                    <input type="text" id="Add" name="add" placeholder="Enter your Address" class="w3-input" value="{{:users.address}}"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="ctry">Country</label><br>
+                    <input type="text" id="ctry" name="ctry" placeholder="Enter your country" class="w3-input" value="{{:users.country}}"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="ctry">State</label><br>
+                    <input type="text" id="st" name="st" placeholder="Enter your state" class="w3-input"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="ct">City</label><br>
+                    <input type="text" id="ct" name="ct" placeholder="Enter your city" class="w3-input"></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" class="w3-button w3-green">Update</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="w3-button w3-orange">Reset</button></td>
+            </tr>
+        </table>
+
+
+
+    </form>
+</script>
+<script>
+    showstuff('single_user_log', 'uform', 'duser');
+</script>

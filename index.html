@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Godfessions Admin Panel</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="description" content="A fully featured Multi-purpose UI">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no, target-densitydpi=device-dpi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="apetugideon">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+</head>
+
+<body>
+    <div class="w3-container">
+        <div class="w3-row">
+            <div class="w3-col l12 m12 s12" style="padding:10px;">
+                <img src="images/icon.png" style="height:80px; width:80px;">
+                <img src="images/godfessions-logo-copy-2.png" alt="godfessions logo">
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col l4 m4 s12">&nbsp;</div>
+            <div class="w3-col l4 m4 s12">
+                <div class="w3-card-4" style="width:100%">
+                    <form method="post" id="frmLogin" name="frmLogin">
+                        <header class="w3-container w3-red">
+                            <h2>Authentication</h2>
+                        </header>
+                        <div class="w3-container">
+                            <table class="w3-table">
+                                <tr>
+                                    <td>User ID<br/>
+                                        <input id="username" name="username" type="text" class="w3-input" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Password<br/>
+                                        <input id="password" name="password" type="password" class="w3-input">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" id="dologins" name="dologins" class="w3-btn w3-green backEndActions"> Sign </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <footer class="w3-container w3-red">
+                            &copy;2017 GOD'FESSIONS
+                        </footer>
+                    </form>
+                </div>
+            </div>
+            <div class="w3-col l4 m4 s12">&nbsp;</div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col l12 m12 s12">&nbsp;</div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/w3.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/actions.js"></script>
+</body>
+
+</html>

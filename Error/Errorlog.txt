@@ -1,0 +1,1 @@
+Error on line 24 in /var/www/html/godfessions/server/utilities/dbrel.php : SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)\n

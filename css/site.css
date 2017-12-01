@@ -1,0 +1,33 @@
+.menu_root {
+    color: #222;
+    padding: 5px;
+    margin: 0;
+}
+
+.menu_root li {
+    list-style: none;
+    cursor: pointer;
+}
+
+ul.w3-bar a {
+    display: inline-flex;
+    width: auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.w3-table-all thead tr th {
+    background: #999;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    text-align: center;
+}
+
+.w3-table-all tbody tr td {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.fcell {
+    width: 50px;
+}

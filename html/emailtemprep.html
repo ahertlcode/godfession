@@ -1,0 +1,36 @@
+<div class="w3-row">
+    <div id="emailwin" class="w3-col l12 m12 s12">
+
+    </div><br/> LEGENDS&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-check w3-green"></i>&nbsp;&nbsp;ACTIVE&nbsp;&nbsp;<i class="fa fa-times w3-red"></i>&nbsp;&nbsp;DEACTIVATED&nbsp;&nbsp;<i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;EDIT&nbsp;&nbsp;<i class="fa fa-trash-o"></i>&nbsp;&nbsp;DELETE
+</div>
+<script id="emailtmp" type="text/x-jsrender">
+    <table class="w3-table-all w3-border">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Template Code</th>
+                <th>Name</th>
+                <th>Tempalte</th>
+                <th>Created</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {{for ~root.emails ~index = #index}}
+            <tr>
+                <td>{{:id}}</td>
+                <td>{{:template_code}}</td>
+                <td>{{:name}}</td>
+                <td>{{:template}}</td>
+                <td>{{:created}}</td>
+                <td style="text-align:center;">
+                    <i onclick="view_edit_data('{{:id}}','getEmails','emailtemp.html','single_user_log','dwin');" class="fa fa-2x fa-pencil-square-o"></i>&nbsp;
+                    <i onclick="delete_data('{{:id}}','emailtemplates', 'user_data_log','getEmails','email_log','emailtmp','emailwin');" class="fa fa-2x fa-trash-o"></i>
+                </td>
+            </tr>
+            {{/for}}
+        </tbody>
+    </table>
+</script>

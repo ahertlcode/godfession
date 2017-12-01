@@ -1,0 +1,23 @@
+1). This API uses a single entry, so that every authentication and clean-up can be
+    achieved in a single file. This mean that for every action that will be carried out only
+    "serverSideProcessor.php" will be called.
+
+2). Three key parameters must be sent with the required filters in the ajax request
+    a. datamethod - The method to be called
+    b. datakls - this should correspond with the database table name
+    c. actualact - The actual action being carried out
+
+3). The json array are sent to and received from the main API "serverSideProcessor.php".
+    with all the name of every the name:value parameter corresponding to the database table
+    column name except the id(primary key fields) that I prefix with the database name for
+    identity sake. e.g users_id from users, admin_roles_id from admin_roles.
+
+4). Every server side call follows the same front end process as the one in action.js
+
+5). From the database structure I observed that records are never deleted at anytime, they
+    are only updated with the is_deleted SET to 1
+
+5). Endeavor to add the database password in server/utilities/dbrel.php before carrying out actions.
+
+Thanks.
+Please revert on any issue.
